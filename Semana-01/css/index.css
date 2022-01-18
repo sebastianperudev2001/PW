@@ -1,0 +1,49 @@
+h1 {
+    color:white; 
+}
+
+h2 {
+    font-family: "Open Sans Condensed";
+}
+/*
+Por defeccto algunas etiquetas vienen con propiedades por defecto.
+*/
+
+
+/*
+
+!important --> Sirve para priorizar una regla
+
+No se puede modificar un archivo CSS, pero por JS se pueden cambiar los estilos del HTML
+
+*/
+
+
+/*
+    Podemos cambiar los estilos de un específico estilo de un elemento usando PSEUDOCLASES
+    
+
+*/
+a{color:cornflowerblue;}
+
+a:visited
+{ 
+    color:brown;
+}
+
+a:hover{color:aqua;}
+
+/*
+Pseudoelementos 
+*/
+p::first-letter
+{
+    text-transform: uppercase;
+}
+
+p::first-line{background-color: aquamarine;}
+
+/*
+inline --> en la misma línea
+none --> Ocultar elementos
+*/
