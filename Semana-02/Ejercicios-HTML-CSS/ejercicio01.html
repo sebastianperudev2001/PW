@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="ejercicio02.css">
     <title>Ejercicio 01</title>
 </head>
 
@@ -12,91 +13,100 @@
     <img id="imagen" src="https://upload.wikimedia.org/wikipedia/commons/0/0e/ULIMA_logo.png" alt="logo ulima">
     <h1 id="titulo">Sobre nosotros</h1>
     <p id="descripcion">ULIMA Social es una iniciativa que quiere mejorar la comunidad mediante la ejecución de
-        proyectos prácticos que permitan solucionar problemas. Es un lugar donde se juntan gente creativa, alrededor de
-        grandes ideas.</p>
+        <span class="texto"> proyectos prácticos</span> que permitan solucionar problemas. Es un lugar donde se juntan
+        gente creativa, alrededor de
+        grandes ideas.
+    </p>
 
-    <div class="box">
-        <h2 id="titulo-proyectos">Proyectos</h2>
-        <ul>
-            <li> Más buscados
-                <ul>
-                    <li> <a href="#">Flying ducks</a> </li>
-                    <li> <a href="#">Kitty kitty kitty</a> </li>
-                </ul>
-            </li>
+    <div class="content">
 
-            <li> Últimos
-                <ul>
-                    <li> <a href="#">Flying ducks</a> </li>
-                    <li> <a href="#">Kitty kitty kitty</a></li>
-                </ul>
-            </li>
-        </ul>
-    </div>
+        <div class="box" id="proyectos">
+            <h2 id="titulo-proyectos">Proyectos</h2>
+            <ul>
+                <li> Más buscados
+                    <ul>
+                        <li> <a href="#">Flying ducks</a> </li>
+                        <li> <a href="#">Kitty kitty kitty</a> </li>
+                    </ul>
+                </li>
 
-    <div class="box">
-        <h2 id="titulo-cronograma">Cronograma</h2>
-        <table class="tabla">
-            <thead>
-                <tr>
-                    <th>Hora</th>
-                    <th>Tema</th>
-                </tr>
-            </thead>
-
-            <tbody>
-                <tr>
-                    <td>18:00 - 20:30</td>
-                    <td>Registro</td>
-                </tr>
-
-                <tr>
-                    <td>20:30 - 23:00</td>
-                    <td>Charla</td>
-                </tr>
-            </tbody>
-        </table>
-    </div>
-
-    <div class="box">
-        <h2 id="registrarse">Regístrate!</h2>
-
-        <div>
-            <label>Nombre: </label>
-            <input type="text">
+                <li> Últimos
+                    <ul>
+                        <li> <a href="#">Flying ducks</a> </li>
+                        <li> <a href="#">Kitty kitty kitty</a></li>
+                    </ul>
+                </li>
+            </ul>
         </div>
 
-        <div>
-            <label>Email:</label>
-            <input type="text">
-        </div>
+        <div class="apartado">
+            <div class="box">
+                <h2 id="titulo-cronograma">Cronograma</h2>
+                <table class="tabla">
+                    <thead>
+                        <tr>
+                            <th>Hora</th>
+                            <th>Tema</th>
+                        </tr>
+                    </thead>
 
-        <div>
-            <label>Lugar: </label>
-            <select name="lugar">
-                <option value="lima">Lima</option>
-                <option value="arequipa">Arequipa</option>
-            </select>
-        </div>
-        <label>Género</label>
-        <!-- <label> Dar mayor información de un valor input. for: Este label está relacionaod con un input -->
-        <label> <input type="radio" name="gender"> Femenino </label>
-        <label> <input type="radio" name="gender">Masculino</label>
-        <div>
+                    <tbody>
+                        <tr>
+                            <td>18:00 - 20:30</td>
+                            <td>Registro</td>
+                        </tr>
 
-
-            <div>
-                <div>Experiencia:</div>
-                <textarea name="experiencia" cols="35" rows="5"></textarea>
+                        <tr>
+                            <td>20:30 - 23:00</td>
+                            <td>Charla</td>
+                        </tr>
+                    </tbody>
+                </table>
             </div>
 
-            <button>
-                Registrarse
-            </button>
+            <form>
+                <h2 id="registrarse">Regístrate!</h2>
 
+                <div>
+                    <label>Nombre: </label>
+                    <input type="text">
+                </div>
+
+                <div>
+                    <label>Email:</label>
+                    <input type="text">
+                </div>
+
+                <div>
+                    <label>Lugar: </label>
+                    <select name="lugar">
+                        <option value="lima">Lima</option>
+                        <option value="arequipa">Arequipa</option>
+                    </select>
+                </div>
+                <label>Género</label>
+                <!-- <label> Dar mayor información de un valor input. for: Este label está relacionaod con un input -->
+                <label> <input type="radio" name="gender"> Femenino </label>
+                <label> <input type="radio" name="gender">Masculino</label>
+                <div>
+
+
+                    <div>
+                        <div>Experiencia:</div>
+                        <textarea name="experiencia" cols="35" rows="5"></textarea>
+                    </div>
+
+                    <button>
+                        Registrarse
+                    </button>
+
+                </div>
+            </form>
         </div>
-    </div>
 
+
+
+    </div>
 </body>
 
 </html>
