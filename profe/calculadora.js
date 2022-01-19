@@ -1,10 +1,9 @@
 let numeroIngresadoStr = 0 // global
 let enOperacion = false;
 
-function digitOnClick(event) {
-    
-    const but = event.target;
-    const numero = but.innerText;
+function digitoOnClick(event) {
+    const but = event.target
+    const numero = but.innerText
 
     const input = document.getElementById("txt_numeros")
     
@@ -15,16 +14,16 @@ function digitOnClick(event) {
         //input.value = input.value + numero
         input.value += numero
     }
-    
-    const divNombre = document.getElementById("txt_nombre");
+
+    const divNombre = document.getElementById("txt_nombre")
     if (divNombre != null) {
         divNombre.parentElement.removeChild(divNombre)
-    }    
+    }
+    
 }
 
-//Arrow function 
 const operacionOnClick = (event) => {
-    const but = event.target;
+    const but = event.target
     const tipoOperacion = but.innerText;
 
     const input = document.getElementById("txt_numeros")
@@ -148,75 +147,33 @@ const crearFilaBotones = (botonInicial) => {
     body.appendChild(div)
 }
 
-// Para asignar objetos funciones como variables, no se incluye nombre
-const main = function () 
-    //Registar los eventos click de los botones
-{
- 
+const main = function() {
+
     crearCajaTexto()
     crearFilaBotones("7")
     crearFilaBotones("4")
     crearFilaBotones("1")
     crearFilaBotones("C")
 
-    
-    
-    document.getElementById("but-9").onclick = digitOnClick; 
-    document.getElementById("but-8").onclick = digitOnClick; 
-    document.getElementById("but-7").onclick = digitOnClick; 
-    document.getElementById("but-6").onclick = digitOnClick; 
-    document.getElementById("but-5").onclick = digitOnClick; 
-    document.getElementById("but-4").onclick = digitOnClick; 
-    document.getElementById("but-3").onclick = digitOnClick; 
-    document.getElementById("but-2").onclick = digitOnClick; 
-    document.getElementById("but-1").onclick = digitOnClick; 
-    document.getElementById("but-0").onclick = digitOnClick; 
 
-    document.getElementById("but-suma").onclick = operacionOnClick; 
-    document.getElementById("but-resta").onclick = operacionOnClick; 
-    document.getElementById("but-multi").onclick = operacionOnClick; 
-    document.getElementById("but-C").onclick = operacionOnClick; 
-    //2 funciones al presionar 1 botón ---> addEventListener 
-    document.getElementById("but-igual").addEventListener("click", operacionOnClick); 
-    document.getElementById("but-igual").addEventListener("click", fPrueba); 
+    // Registrar los eventos click de los botones
+    document.getElementById("but0").onclick = digitoOnClick
+    document.getElementById("but1").onclick = digitoOnClick
+    document.getElementById("but2").onclick = digitoOnClick
+    document.getElementById("but3").onclick = digitoOnClick
+    document.getElementById("but4").onclick = digitoOnClick
+    document.getElementById("but5").onclick = digitoOnClick
+    document.getElementById("but6").onclick = digitoOnClick
+    document.getElementById("but7").onclick = digitoOnClick
+    document.getElementById("but8").onclick = digitoOnClick
+    document.getElementById("but9").onclick = digitoOnClick
 
+    document.getElementById("butC").onclick = operacionOnClick
+    document.getElementById("butIgual").addEventListener("click", operacionOnClick)
+    document.getElementById("butMas").onclick = operacionOnClick
 
-    document.getElementById("but-dividir").onclick = operacionOnClick; 
-
-     // Crear linea y nombre
-     crearLineaYNombre();
-
-
-
-
+    // Crear linea y nombre
+    crearLineaYNombre();
 }
 
-//onload --> Esta funcion se va a ejecutar cuando termine de ejecutarse la ventana
-//Ya no habría problema con la ubicacion de la etiqueta script
-window.onload = main; 
-
-//La propiedad target nos va mostar una referencia en el objeto html 
-
-/*
-document --> objeto total
-history --> objeto que almacena historia de navegación 
-location --> informacion sobre la ubicacion en la que estamos
-window --> objeto general. Padre de todos los padres
-*/
-
-
-/*
-
-Metodos:
-
-firstChild --> nodo de cualquier tipo
-
-firstElementChild ---> Nodos de tipo HTML 
-
-childNodes --> todos los elementos hijos de tipo text
-
-.getAtributte('') -->
-
-.nextElementSibling --> siguiente nodo
-
-*/
+window.onload = main
