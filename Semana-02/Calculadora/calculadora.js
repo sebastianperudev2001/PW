@@ -41,7 +41,7 @@ const operacionOnClick = (event) => {
 
 const crearLineaYNombre = () => {
     const hr = document.createElement("hr")
-    const body = document.firstElementChild.children[2]
+    const body = document.firstElementChild.children[1]
     body.appendChild(hr)
 
     const div = document.createElement("div")
@@ -58,7 +58,7 @@ const crearCajaTexto = () => {
     input.setAttribute("type", "text")
     input.setAttribute("value", "0")
 
-    const body = document.firstElementChild.children[2]
+    const body = document.firstElementChild.children[1]
     body.appendChild(input)
 }
 
@@ -144,7 +144,7 @@ const crearFilaBotones = (botonInicial) => {
     div.appendChild(divHijo3)
     div.appendChild(divHijo4)
 
-    const body = document.firstElementChild.children[2]
+    const body = document.firstElementChild.children[1]
     body.appendChild(div)
 }
 
@@ -178,7 +178,6 @@ const main = function ()
     document.getElementById("but-C").onclick = operacionOnClick; 
     //2 funciones al presionar 1 botón ---> addEventListener 
     document.getElementById("but-igual").addEventListener("click", operacionOnClick); 
-    document.getElementById("but-igual").addEventListener("click", fPrueba); 
 
 
     document.getElementById("but-dividir").onclick = operacionOnClick; 
