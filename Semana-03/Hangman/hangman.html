@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,9 +8,41 @@
     <title>Hangman</title>
     <link rel="stylesheet" href="css/bootstrap.css" type="text/css">
     <script src="js/bootstrap.bundle.js"></script>
+    <link rel="stylesheet" href="css/hangman.css">
 </head>
+
 <body class="container">
     <h1>Hangman</h1>
-    
+
+    <!-- Cuerpo -->
+
+    <div class="row">
+        <div class="col-md">
+            <img src="Images/Hangman-0.png" class="img-fluid" id = "imagen">
+        </div>
+        <div class="col-md">
+            <div id="zona_refran" class="refran"></div>
+            <div>
+                <input type="text" id="txt_letras_ingresadas" class="form-control mt-4 mb-4">
+            </div>
+            <div id="mensaje_ganador" class="alert alert-success oculto">
+                GANASTE!
+            </div>
+            <div id="mensaje_perdedor" class="alert alert-danger oculto">
+                Perdiste
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+
+    <div class="card">
+        <div class="card-body">
+            Universidad de Lima - 2022-0 
+        </div>
+    </div>
+    <script src="js/hangman.js"></script>
+
 </body>
+
 </html>
