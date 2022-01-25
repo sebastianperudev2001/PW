@@ -1,0 +1,14 @@
+AJAX --> Comunicaciones remotas
+
+AJAX es frontend. 
+
+Javascript asincrono
+
+XML es como el padre de HTML 
+- Se define los atributos y etiquetas 
+- Formato de intercambio de datos --> enviar info desde nuestro navegador a otro lugar en un formato xml 
+
+Transferir datos entre el servidor y la web, sin usar la url 
+Podemos abrir canales de comunicacion para enviar DATA 
+
+No devuelve HTML, sino solo data 

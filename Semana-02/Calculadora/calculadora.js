@@ -1,5 +1,6 @@
 let numeroIngresadoStr = 0 // global
 let enOperacion = false;
+const operaciones = ["suma", "resta",]
 
 function digitOnClick(event) {
     
