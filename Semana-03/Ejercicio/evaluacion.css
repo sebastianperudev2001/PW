@@ -1,0 +1,36 @@
+body 
+{
+    padding: 20px; 
+}
+
+#container 
+{
+    border: 1px solid red; 
+    display:table; 
+    width:auto; 
+}
+
+.fila 
+{
+    display: flex;
+    border: 1px solid blue; 
+  width: auto;
+  clear: both;
+}
+
+.boton
+{
+    margin: 10px;
+    border: 1px solid green; 
+    width: 50px;
+    height: 20px;  
+    text-align: center;
+
+}
+
+.celda-presionada 
+{
+    background-color: black; 
+    color: white; 
+    
+}
