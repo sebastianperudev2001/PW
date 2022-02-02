@@ -22,3 +22,7 @@ Algunas diferencias:
 
 Ya no es necesario realizar configuraciones iniciales
 React está basada en componentes. La idea de REact es que creemos interfaces de UI y los pudamos reutilizar en todas nuestras páginas. Esto sirve para evitar hacer copy paste de código HTML/CSS. 
+
+_app.js --> es el archivo padre de todos
+
+En React todas las etiquetas deben estar cerradas
