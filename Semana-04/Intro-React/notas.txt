@@ -26,3 +26,6 @@ React está basada en componentes. La idea de REact es que creemos interfaces de
 _app.js --> es el archivo padre de todos
 
 En React todas las etiquetas deben estar cerradas
+
+Framework Next JS te dice paso a paso lo que debes hacer. Yo las tengo que poner sí o sí en pages. 
+Te da un orden para realizar una aplicacion web
