@@ -1,0 +1,4 @@
+Para hacer uso de next js, necesitamos un ambiente de programación Javascript 
+Necesitamos un servidor para que la aplicación se ejecute a partir del sistema operativo --> Node.js
+
+Node.js --> Entorno de ejecución de JS.
