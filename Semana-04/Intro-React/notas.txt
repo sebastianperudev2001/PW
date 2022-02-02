@@ -2,3 +2,23 @@ Para hacer uso de next js, necesitamos un ambiente de programación Javascript
 Necesitamos un servidor para que la aplicación se ejecute a partir del sistema operativo --> Node.js
 
 Node.js --> Entorno de ejecución de JS.
+Con esto podremos crear aplicaciones creadas en Next JS 
+
+Creación de una aplicación Next Js
+ 
+1. npx create-next-app {nombreApp} --use-npm
+2. npm run dev
+
+Next.js 
+Componentes de interfaz gráfica que va a definir utilizando React y Backend 
+React es una extensión de JS que utiliza JSX (javascript extendido --> JS con HTML)
+
+Es una función clásica de JS que retorna un HTML que es JSX 
+
+Algunas diferencias:
+- <Image>
+- <Head>
+- className --> nuevo atributo 
+
+Ya no es necesario realizar configuraciones iniciales
+React está basada en componentes. La idea de REact es que creemos interfaces de UI y los pudamos reutilizar en todas nuestras páginas. Esto sirve para evitar hacer copy paste de código HTML/CSS. 
