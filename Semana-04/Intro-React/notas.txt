@@ -29,3 +29,20 @@ En React todas las etiquetas deben estar cerradas
 
 Framework Next JS te dice paso a paso lo que debes hacer. Yo las tengo que poner sí o sí en pages. 
 Te da un orden para realizar una aplicacion web
+
+Clase: 03/02/2022
+
+En proyectos Node.js
+Cuando queremos incluir librerías externas (dependencias) --> Tener que usar npm
+NPM--> sistema de gestión de paquetes/proyectos de software node.js 
+En package.json están las dependencias que estamos usanodfa-spin
+
+Al poner npm install, va a revisar las dependencias de package.son y se van a instalar 
+
+Podemos definir subcomponentes en ReactJs 
+Propiedades React: Parametros
+
+El flujo de la información va desde el codigo JS para que despliegue el codigo HTML.
+
+
+useState(): Para crear variables de estado de un componente 
